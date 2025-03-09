@@ -10,7 +10,7 @@ java {
 }
 
 group = "com.github.AlterJuice"
-version = "1.0.3"
+version = "1.0.4"
 
 publishing {
     publications {
