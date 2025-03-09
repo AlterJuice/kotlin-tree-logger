@@ -1,3 +1,3 @@
 
 
-rootProject.name = "Tree logger"
+rootProject.name = "Tree-logger"
