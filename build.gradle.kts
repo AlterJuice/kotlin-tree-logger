@@ -1,16 +1,15 @@
 plugins {
     id("java")
     id("maven-publish")
+    kotlin("jvm")
 }
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
     withSourcesJar()
     withJavadocJar()
 }
 
 group = "com.github.AlterJuice"
-version = "v1.0.6"
+version = "v1.0.7"
 
 publishing {
     publications {
@@ -21,4 +20,13 @@ publishing {
             version = project.version.toString()
         }
     }
+}
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+}
+repositories {
+    mavenCentral()
+}
+kotlin {
+    jvmToolchain(11)
 }
